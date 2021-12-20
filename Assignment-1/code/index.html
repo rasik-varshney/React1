@@ -13,8 +13,24 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
+
 //React Code here
  ReactDOM.render(<div></div>,document.getElementById('root'));
+var one=React.createElement('div',{class:"main", id:"container1"},
+React.createElement('div',{class:"Uinside", id :"inside1",style:{backgroundColor:"orange"}},"",null),
+React.createElement('div',{class:"Uinside", id :"inside2",style:{backgroundColor:"orange"}},"",null),null)
+
+
+var two=React.createElement('div',{class:"main", id:"container2",style:{backgroundColor:"aquamarine"}},"",null)
+var three=React.createElement('div',{class:"main", id:"container3"},
+React.createElement('div',{class:"Linside", id :"inside4",style:{backgroundColor:"blue"}},"",null),
+React.createElement('div',{class:"Linside", id :"inside3",style:{backgroundColor:"blue"}},"",null),
+React.createElement('div',{class:"Linside", id :"inside5",style:{backgroundColor:"blue"}},"",null),
+null)
+
+var big=React.createElement('div',{id:"bigcontainer",style:{backgroundColor:"white"}},one,two,three,null)
+
+ ReactDOM.render(big,document.getElementById('root'));
 
 </script>
 <!--
